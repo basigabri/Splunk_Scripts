@@ -39,26 +39,26 @@ else
 #Use REST api to add users
 
 
-curl -k -u admin:splunk@telefonica123 https://10.26.204.145:8089/services/authorization/roles \
+curl -k -u admin:changeme https://10.26.204.145:8089/services/authorization/roles \
 -d name=$line$role \
 -d imported_roles=power \
 -d srchIndexesDefault=$line$index2 \
 -d srchIndexesAllowed=$line$index2
 
-curl -k -u admin:splunk@telefonica123 https://10.26.204.146:8089/services/authorization/roles \
+curl -k -u admin:changeme https://10.26.204.146:8089/services/authorization/roles \
 -d name=$line$role \
 -d imported_roles=power \
 -d srchIndexesDefault=$line$index2 \
 -d srchIndexesAllowed=$line$index2
 
- curl -k -u admin:splunk@telefonica123 https://10.26.204.145:8089/services/authentification/users \
+ curl -k -u admin:changeme https://10.26.204.145:8089/services/authentification/users \
 -d name=$line \
 -d realname=$line \
 -d password=$passwd$line \
 -d defaultApp=search \
 -d roles=$line$role
 
-curl -k -u admin:splunk@telefonica123 https://10.26.204.146:8089/services/authentification/users \
+curl -k -u admin:changeme https://10.26.204.146:8089/services/authentification/users \
 -d name=$line \
 -d realname=$line \
 -d password=$passwd$line \

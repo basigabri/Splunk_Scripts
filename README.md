@@ -1,8 +1,5 @@
-Splunk :: Add RestFull indexes and user/roles
+Splunk :: Collection of scripts I use 
 ================================================
 
-*This is a script to apply new indexes, users & roles into a Splunk Clustered environment*
-
-* The script needs to be executed on the master-node.
-* After the script execute: splunk apply cluster-bundle
-* This one will restart and update indexes on peers. 
+* bulkImport uses file users.txt to bulk create users into Splunk Cluster
+* splunk_licesnse.sh is a script to get a passive check into Nagios/Icinga
