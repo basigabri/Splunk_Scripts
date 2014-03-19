@@ -35,13 +35,13 @@ fi
 #Use REST api to add users
 
 
-curl -k -u admin:telefonica123 https://localhost:8089/services/authorization/roles \
+curl -k -u admin:changeme https://localhost:8089/services/authorization/roles \
 -d name=$user$role \
 -d imported_roles=power \
 -d srchIndexesAllowed=$index$index2 \
 -d srchIndexesDefault=$index$index2
 
- curl -k -u admin:telefonica123 https://localhost:8089/services/authentification/users \
+ curl -k -u admin:changeme https://localhost:8089/services/authentification/users \
 -d name=$user \
 -d realname=$real \
 -d password=$passwd \
