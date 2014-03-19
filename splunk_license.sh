@@ -38,7 +38,7 @@ URL=`echo $6|sed "s/$SPLUNKSERVER/$WWW/"`
 
 
 nagios_notify () {
-${SENDGEARMAN_BIN}/send_gearman --server=${NAGIOS_HOST}:${GEARMAN_PORT} --encryption=yes --key=clave_compartida_gearman11 --host=${HOST} --service="${SERVICE}" --result_queue=check_results --returncode=${CODE} --message="${MSG}" > /dev/null 2>/dev/null
+${SENDGEARMAN_BIN}/send_gearman --server=${NAGIOS_HOST}:${GEARMAN_PORT} --encryption=yes --key=keytobechanged --host=${HOST} --service="${SERVICE}" --result_queue=check_results --returncode=${CODE} --message="${MSG}" > /dev/null 2>/dev/null
 }
 
  
