@@ -29,7 +29,7 @@ SERVICE=`echo $5|awk -F'[' '{print $2}'|awk -F']' '{print $1}'|sed 's/\- //g'|cu
 HOST=VIP-splunkmaster
 EVENTS=$1
 SEARCH=`echo "'$8'"|cut -d/ -f8`
-DATA=`curl -s -k -u admin:splunk@telefonica123  https://localhost:8089/servicesNS/admin/search/search/jobs/$SEARCH/results  --get -d output_mode=csv -d count=2  | cut -d, -f8 | grep -v GB | sed -e 's/"//g'`
+DATA=`curl -s -k -u admin:changeme  https://localhost:8089/servicesNS/admin/search/search/jobs/$SEARCH/results  --get -d output_mode=csv -d count=2  | cut -d, -f8 | grep -v GB | sed -e 's/"//g'`
 DATA=`echo $DATA | sed -e 's/ /\+/g' | bc`
 LIMITc="32"
 LIMITw="25"
