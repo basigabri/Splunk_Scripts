@@ -1,5 +1,6 @@
-##Extract sid from saved search
+Extract sid from saved search
 
+###
 curl -k -u admin:changeme  https://localhost:8089/servicesNS/admin/sos/saved/searches/tugo_daily_license_usage/dispatch -d "trigger_action=1"
 
 ##get results
