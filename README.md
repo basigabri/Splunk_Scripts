@@ -1,5 +1,4 @@
-Splunk :: Collection of scripts I use 
+Splunk :: Some interesting notes 
 ================================================
 
-* bulkImport uses file users.txt to bulk create users into Splunk Cluster
-* splunk_licesnse.sh is a script to get a passive check into Nagios/Icinga
+* REST/api usage
